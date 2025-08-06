@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "grades": [
+      {
+        "courseName": "Math",
+        "grade": 90
+      },
+      {
+        "courseName": "Physics",
+        "grade": 85
+      },
+      {
+        "courseName": "Chemistry",
+        "grade": 88
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "grades": [
+      {
+        "courseName": "Math",
+        "grade": 78
+      },
+      {
+        "courseName": "Physics",
+        "grade": 82
+      },
+      {
+        "courseName": "Chemistry",
+        "grade": 80
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "grades": [
+      {
+        "courseName": "Math",
+        "grade": 95
+      },
+      {
+        "courseName": "Physics",
+        "grade": 92
+      },
+      {
+        "courseName": "Chemistry",
+        "grade": 94
+      }
+    ]
+  }
+]

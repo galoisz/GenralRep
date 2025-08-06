@@ -1,0 +1,29 @@
+﻿@model List<MVCWebApp.Models.Product>
+
+<h2>Product List</h2>
+<form method="get" action="/Product/Search">
+    <input type="text" name="query" placeholder="Search products" />
+    <button type="submit">Search</button>
+</form>
+
+<table border="1" style="margin-top: 20px;">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Price</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Product/Create">Add New Product</a>

@@ -1,0 +1,16 @@
+﻿@model MVCWebApp.Models.Product
+
+<h2>Add New Product</h2>
+
+<form method="post" action="/Product/Create">
+    <div>
+        <label for="Name">Name:</label>
+        <input type="text" id="Name" name="Name" />
+    </div>
+    <div>
+        <label for="Price">Price:</label>
+        <input type="number" id="Price" name="Price" step="0.01" />
+    </div>
+    <button type="submit">Create</button>
+</form>
+<a href="/Product/Index">Back to List</a>
