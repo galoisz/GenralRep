@@ -31,7 +31,8 @@ public class LogConsumerService : BackgroundService
         _connection = factory.CreateConnection();
         _channel = _connection.CreateModel();
 
-        _channel.ExchangeDeclare(exchange: "logs-exchange", type: ExchangeType.Direct);
+        //_channel.ExchangeDeclare(exchange: "yarel_logs", type: ExchangeType.Direct);
+        _channel.ExchangeDeclare(exchange: "yarel_logs", type: ExchangeType.Direct,  autoDelete: false);
 
     }
 
@@ -39,13 +40,13 @@ public class LogConsumerService : BackgroundService
     {
         foreach (var level in new[] { "info", "warning", "error", "fatal" })
         {
-            string queueName = $"logs-{level}";
+            string queueName = $"{level}";
             _channel.QueueDeclare(queue: queueName, durable: true, exclusive: false, autoDelete: false);
-            _channel.QueueBind(queue: queueName, exchange: "logs-exchange", routingKey: level);
+            _channel.QueueBind(queue: queueName, exchange: "yarel_logs", routingKey: level);
 
             var consumer = new EventingBasicConsumer(_channel);
             consumer.Received += async (model, ea) => await ProcessMessage(ea);
-            _channel.BasicConsume(queue: queueName, autoAck: false, consumer: consumer);
+            _channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
         }
         return Task.CompletedTask;
     }

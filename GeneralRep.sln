@@ -59,7 +59,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FUCache", "FUCache\FUCache.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Semaphore", "Semaphore\Semaphore.csproj", "{8BF40EC0-828D-4D92-94CD-8859F3C8AC03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RLEDecode", "RLEDecode\RLEDecode.csproj", "{62AF336F-8894-4DA1-9C43-6F885C52613D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RLEDecode", "RLEDecode\RLEDecode.csproj", "{62AF336F-8894-4DA1-9C43-6F885C52613D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogsWebApi", "LogsWebApi\LogsWebApi.csproj", "{1DBA4399-9CFE-4BFB-AD97-F60AF472E88A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -183,6 +185,10 @@ Global
 		{62AF336F-8894-4DA1-9C43-6F885C52613D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62AF336F-8894-4DA1-9C43-6F885C52613D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62AF336F-8894-4DA1-9C43-6F885C52613D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DBA4399-9CFE-4BFB-AD97-F60AF472E88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DBA4399-9CFE-4BFB-AD97-F60AF472E88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DBA4399-9CFE-4BFB-AD97-F60AF472E88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DBA4399-9CFE-4BFB-AD97-F60AF472E88A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
